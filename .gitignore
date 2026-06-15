@@ -1,0 +1,23 @@
+# Environnement Python
+.venv/
+__pycache__/
+*.pyc
+
+# Modèle ONNX (~25 Mo) — récupéré via download_model.py
+models/*.onnx
+
+# Données perso et sorties
+input/
+out/
+
+# Clips vidéo
+*.mov
+*.MOV
+*.mp4
+*.avi
+
+# OS / éditeurs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

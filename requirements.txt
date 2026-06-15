@@ -1,0 +1,7 @@
+# Vitesse de main au volley — dépendances (Python 3.14, Windows, GPU AMD via DirectML)
+numpy>=2.4
+scipy>=1.17
+opencv-python>=4.13      # I/O image, dessin, écriture vidéo annotée
+onnxruntime-directml>=1.24  # inférence MoveNet ONNX (GPU AMD via DirectML, fallback CPU)
+av>=14                   # décodage robuste HEVC iPhone + vrai fps + timestamps par frame
+matplotlib>=3.9          # courbe de vitesse (backend Agg, pas de GUI)
