@@ -12,7 +12,25 @@ Pose estimation **MoveNet Thunder (ONNX)** → suivi du poignet → traitement d
 
 ---
 
-## Installation
+## 📱 Web app temps réel (le plus simple)
+
+**→ https://traual.github.io/volley-hand-speed/** — ouvre ce lien dans **Safari sur ton iPhone**.
+
+Caméra en direct + pose **MoveNet en JavaScript** (TensorFlow.js), tout **on-device**
+(rien n'est envoyé). Affiche la **vitesse du poignet en live** et le **dernier pic**.
+
+1. Entre ta taille, choisis la main, **Démarrer la caméra** (autorise l'accès).
+2. Pose le tél de profil, recule pour qu'on te voie **en entier** (calibration auto par la taille).
+3. **Nouveau swing** remet le pic à zéro ; fais ton geste ; lis le pic.
+
+> ⚠️ La caméra live tourne à ~30-60 fps (pas 240) → le pic est **moins précis** que
+> l'analyseur de clip. Idéal pour du feedback rapide et comparer tes essais ; pour un
+> chiffre de référence, utilise l'analyseur de clip ci-dessous.
+> Objectif long terme : portage en **app iOS native (App Store)**.
+
+## Analyseur de clip (Python — le plus précis)
+
+### Installation
 
 ```powershell
 # depuis le dossier volley_hand_speed
