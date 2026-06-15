@@ -36,8 +36,8 @@ button.ghost { padding: 14px; border: 1px solid #2a3354; border-radius: 14px;
 /* Mesure */
 #live { display: flex; flex-direction: column; height: 100%; }
 .stage { position: relative; flex: 1; overflow: hidden; background: #000; }
-#video, #overlay { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-#video { transform: scaleX(1); }
+/* contain = on voit TOUT le champ caméra (pas de rognage/zoom), bandes noires si besoin */
+#video, #overlay { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
 
 #hud { position: absolute; inset: 0; pointer-events: none; padding: 16px;
   display: flex; flex-direction: column; gap: 6px; }
